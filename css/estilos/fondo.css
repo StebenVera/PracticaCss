@@ -1,0 +1,13 @@
+body{
+    background: url("../img/food.png");
+
+    background-attachment: fixed;
+   
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 1px #ff0000;
+    text-align: center;
+}
