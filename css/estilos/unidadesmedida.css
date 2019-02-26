@@ -1,0 +1,15 @@
+
+body{
+    font-size: 20px;
+}
+
+.contenedor_padre{
+    font-size: 30px;
+}
+.hijo{
+    width: 10rem;
+    height: 10rem;
+    background-color: #000;
+    color: #fff;
+    word-break: break-all;
+}

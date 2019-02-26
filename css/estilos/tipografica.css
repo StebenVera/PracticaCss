@@ -1,0 +1,13 @@
+body{
+    font-family:  "Times New Roman",Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    line-height: 30px;
+}
+h1{
+    font-size: 1.25em;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+}

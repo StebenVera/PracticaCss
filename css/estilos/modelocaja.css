@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+}
+.caja{
+    background-color: #0353a4;
+    width: 200px;
+   /* height: 200px; */
+    margin: 20px 0px;
+    padding: 20px;
+    text-align: center;
+  
+}
