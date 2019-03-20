@@ -1,0 +1,22 @@
+.caja{
+    background: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    transform: translate(100px,0px) rotate(50deg);
+    
+
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background: #21295c;
+    transition: all  1s linear;
+    /*transition-delay: 2s;*/
+}
+
+.caja2:hover{
+    background: #9eb3c2;
+    width: 300px;
+    height: 300px;
+    
+}

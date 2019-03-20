@@ -1,0 +1,26 @@
+.texto{
+    text-shadow: 2px 0px 10px blue; 
+    color: white;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #f79256;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.9);
+}
+
+.cajas{
+    width: 300px;
+    height: 300px;
+    background: #f79256;
+    margin:30px;
+    display: inline-block;
+}
+.caja1{
+    border: 7px solid #000;
+}
+.caja2{
+    border: 10px inset darkblue;
+    border-radius: 20px;
+}

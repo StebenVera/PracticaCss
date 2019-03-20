@@ -1,0 +1,44 @@
+div,a{
+    background: #ccc;
+}
+a{
+    background: rebeccapurple;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+}
+.caja{
+    color: #fff;
+    background: #4fb560;
+    margin: 20 0px;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+.contenedor{
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.izquierda{
+    float: left;
+}
+.derecha{
+    float: right;
+}
+.contenedor2 .caja{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.azul{
+    background: blue;
+    z-index: 10;
+}
+.gris{
+    background: gray;
+    left: 50px;
+    bottom: 80px;
+    z-index: 9;
+}

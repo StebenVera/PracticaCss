@@ -1,15 +1,16 @@
-
 body{
-    font-size: 20px;
+    padding: 5px;
 }
+
 
 .contenedor_padre{
-    font-size: 30px;
+    font-size: 50px;
 }
 .hijo{
-    width: 10rem;
+    width: 10em;
     height: 10rem;
     background-color: #000;
     color: #fff;
     word-break: break-all;
+    padding: 2px;
 }
