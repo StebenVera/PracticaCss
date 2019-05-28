@@ -1,0 +1,31 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background: url("bg.svg") no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
+}
+
+#left {
+  position: absolute;
+  top: 60%;
+}
+
+.contenido {
+  position: relative;
+  right: -500px;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=modernos.css.map */

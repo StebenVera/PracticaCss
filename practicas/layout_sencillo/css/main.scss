@@ -1,0 +1,93 @@
+@import 'generales';
+@import 'header';
+
+
+//Estilos para main 
+.main{
+    width: 70%;
+    float: left;
+    background: #fff;
+    .imagen{
+        width: 100%;
+        img{
+            width: 100%;
+            vertical-align: top;
+        }  
+    }
+    .post{
+        padding: 40px;
+        article{
+            h2{
+                margin-bottom: 20px;
+                color: red;
+            }
+            p{
+                margin-bottom: 15px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+//Fin estilos main
+
+//Estilos para aside
+aside{
+    width: 30%;
+    float: left;
+    background: #161f26;
+    padding: 20px;
+    color: #fff;
+    .widget{
+        margin-bottom: 20px;
+        .titulo{
+            color: #ff8000;
+            border-bottom: 1px solid #ff8000;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                border-bottom: 1px solid rgba(#fff,  .2);
+                padding: 10px 0;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        color: #8f8f8f;
+                    }
+                }
+            }
+        }
+        p{
+            line-height: 27px;
+        }
+    }
+}
+//Fin estilos aside bar
+
+//---- Estilos para footer ----//
+footer{
+    overflow: hidden;
+    width: 70%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+}
+//----Fin estilos footer----//
+
+//---- MediaQueries ----//
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+}
+//---- Fin MediaQueries ----//
+

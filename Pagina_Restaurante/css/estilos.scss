@@ -1,0 +1,351 @@
+*{
+   // margin: 0;
+   // padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background: #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+//-----HEADER-----//
+header {
+    width: 100%;
+    background: url('../img/bg2.jpg')#281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    .contenedor{
+        position:relative;
+        height: 700px;
+        .menu{
+            width: 100%;
+            text-align: right;
+            a{
+                display: inline-block;
+                color:#fff;
+                font-size: 20px;
+                font-weight: 300;
+                text-decoration: none;
+                margin: 40px 20px;
+                position: relative; //Para trabajar efecto con jquery
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .textos{
+            width: 100%;
+            color: #fff;
+            position: absolute; //para darle efecto parallax con jquery
+            top:50%;
+           // margin-top: -52px;
+            .nombre{
+                font-size: 50px;
+                font-weight: 600;
+                span{
+                    font-weight: 300;
+                }
+            }
+            h3{
+                font-size: 25px;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+//-----MAIN-----//
+.main{
+    background: url('../img/email-pattern.png') #ccc;
+    background-repeat: repeat;
+    .acerca-de{
+        .contenedor{
+            overflow: visible;
+            position: relative;
+            .foto{
+                width: 80%; //el otro 20% lo dejamos para la el texto
+                position: absolute;
+                left: 0;
+                top: -40px;
+                z-index: 0;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0,.80);
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+            article{
+                background: #fff;
+                width: 50%;
+                position: relative;
+                z-index: 1;
+                float: right;
+                top: 600px;
+                box-shadow: 0px 6px 15px rgba(0, 0, 0,.35);
+                padding: 40px;
+               h3{
+                   font-size: 50px;
+                   font-weight: 300;
+                   margin-bottom: 40px;
+               }
+               p{
+                   line-height: 28px;
+               }
+            }
+        }
+       
+    }
+    
+    .menu-res{
+            padding-top: 600px;
+            margin-bottom: 50px;
+            .contenedor{
+                .titulo{
+                    font-size: 60px;
+                    font-weight: 800;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .contenedor-menu{
+                    border: 1px solid #000;
+                    background: transparent;
+                    padding: 10px;
+                  //  overflow: hidden;
+                }
+                .contenedor-menu2{
+                    border: 1px solid #000;
+                    background: transparent;
+                    padding: 10px;
+                    //display: flex;
+                   // flex-direction: row;
+                    overflow: hidden;
+                    article{
+                        width: 50%;
+                        float: left;
+                        padding: 20px;
+                        .categoria{
+                            font-size: 22px;
+                            font-weight: 700;
+                            margin-bottom: 40px;
+                            text-align: center;
+                        }
+                        .platillo{
+                            margin-bottom: 30xp;
+                            padding: 20px;
+                            border-bottom: 4px dotted #000;
+                            overflow: hidden;
+                             // display: flex;
+                             // flex-direction: row;
+                            // justify-content: space-between;
+                            // flex-wrap: wrap;
+                            .nombre{
+                                font-size: 20px;
+                                margin-bottom: 15px;
+                                float: left;
+                            }
+                            .precio{
+                                font-size: 20px;
+                                margin-bottom: 15px;
+                                float: right;
+                            }
+                            .descripcion{
+                                font-size: 16px;
+                                color:#676767;
+                                width: 100%;
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+
+
+.galeria{
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;*/
+    overflow: hidden;
+ 
+    .foto{
+        width: 25%;
+        float: left;
+        img{
+            width: 100%;
+            vertical-align: top;
+            opacity: .7;
+            -moz-transition:opacity 1s ease;
+            -webkit-transition: opacity 1s ease;
+            -o-transition: opacity 1s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+.ubicacion{
+    background: #fff;
+    padding: 60px 0px;
+    overflow: hidden;
+
+    .contenedor{
+        .titulo{
+            text-align: center;
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 300px;
+            margin-bottom: 40px;
+        }
+        .direccion{
+            float: left;
+            width: 50%;
+            text-align: left;
+        }
+        .horarios{
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+        .direccion{
+            .calle{
+                margin-bottom: 15px;
+            }
+        }
+        .horarios{
+            overflow: hidden;
+            h4{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .entre-semana,.fin-semana{
+                width: 50%;
+                float: left;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.mapa{
+    width: 100%;
+    overflow: hidden;
+    iframe{
+        width: 100%;
+        min-height: 600px;
+      
+    }
+}
+
+
+    footer{
+        background: #000;
+        .copyright{
+            padding: 20px 0px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+
+    //Media queries
+    @media screen and (max-width:800px){
+        header .contenedor{
+            position: static;
+            height: auto;
+            .textos{
+             position: static;
+             margin: 100px 0px;
+             .nombre{
+                 font-size: 30px;
+             }
+             h3{
+                 font-size: 18px;
+             }
+            }
+            .menu{
+                text-align: center;
+                a{
+                    margin: 10px 20px;
+                }
+            }
+        }
+
+        .main{
+            .acerca-de{
+                .contenedor{
+                    .foto{
+                        position: relative;
+                        width: 100%;
+                    }
+                    article{
+                        position: relative;
+                        width: 100%;
+                        top: -50px;
+                        transform: translate(0px,0)
+                    }
+                }
+            }
+            .menu-res{
+                padding-top: 300px;
+                article{
+                    width: 100%!important;
+                }
+            }
+            .galeria{
+                .foto{
+                    width: 50%;
+                }
+            }
+            .mapa{
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width:400px){
+      
+       
+        .main{
+            .acerca-de{
+                .contenedor{
+                    article{
+                        h3{
+                            font-size: 34px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .ubicacion{
+                .contenedor{
+                    .direccion{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .horarios{
+                        margin-top: 20px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }

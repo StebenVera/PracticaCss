@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays en JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" onclick="alerta()">Hola mundo</h1>
+    <p>Colombia es el mejor pais del mundo</p>
+    <script>
+        var arreglo =['Carlos','Alejandro','Cesar'] 
+        var meses =['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octumbre','Noviembre','Diciembre']
+         console.log(meses.concat(arreglo))
+        var frase = "hola-mundo"
+        var resultado = []
+        resultado=frase.split("-")
+        alert(resultado)
+          alert(meses.length)
+            meses.forEach(element => {
+               alert(element)
+            })
+            for (let contador = 0; contador < meses.length; contador++) {
+                const element = meses[contador];
+                alert(element)
+                
+            }
+        
+    </script>
+    
+</body>
+</html> 
